@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+Sitemap: https://skfighter.com/sitemap.xml
+
+# Google-specific directives
+User-agent: Googlebot
+Allow: /
+Disallow: /search/
+Crawl-delay: 2
+
+# Bingbot directive
+User-agent: bingbot
+Crawl-delay: 3
+
+# Block AI crawlers (optional)
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: GPTBot
+Disallow: /
