@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -18,7 +19,10 @@ export default function Home() {
         <meta property="og:description" content="Professional Backend Developer with 7+ years experience in Node.js, PHP & MySQL." />
         <meta property="og:image" content="https://skfighter.com/images/sushant-kumar-profile.jpg" />
         <meta property="og:image:alt" content="Sushant Kumar - Backend Developer" />
-        
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content="en_IN" />
+
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@skfighter007" />
@@ -44,47 +48,56 @@ export default function Home() {
         </script>
       </Head>
 
-      <main className="max-w-4xl mx-auto px-6 py-12">
-        {/* Header Section */}
-        <header className="text-center mb-16">
-          <img
-            src="./images/sushant-kumar-profile.jpg"
-            alt="Sushant Kumar"
-            className="mx-auto rounded-full w-32 h-32 object-cover mb-6 ring-4 ring-blue-500/20"
-          />
-          <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Sushant Kumar
-          </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 mb-4">
-            Backend Developer (Node.js/PHP) | Chandigarh, India
-          </p>
-          <div className="flex justify-center gap-4">
-            <a 
-              href="/connect" 
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              Contact Me
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/sushantkumar-1a4b30b2" 
-              target="_blank"
-              className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-            >
-              LinkedIn
-            </a>
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+        {/* Hero Section */}
+        <section className="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl p-8 sm:p-12 shadow-lg">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-30 blur-lg"></div>
+          <div className="relative z-10 text-center">
+            <div className="relative mx-auto w-24 h-24 sm:w-32 sm:h-32 mb-6">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-lg"></div>
+              <div className="relative w-full h-full ring-4 ring-blue-500/20 rounded-full overflow-hidden">
+                <Image
+                  src="/images/sushant-kumar-profile.jpg"
+                  alt="Sushant Kumar"
+                  width={128}
+                  height={128}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-2 bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">
+              Sushant Kumar
+            </h1>
+            <p className="text-lg sm:text-xl mb-4">
+              Backend Developer (Node.js/PHP) | Chandigarh, India
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a 
+                href="/connect" 
+                className="px-4 py-2 bg-white text-blue-600 rounded-full hover:bg-gray-100 transition-colors"
+              >
+                Contact Me
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/sushantkumar-1a4b30b2" 
+                target="_blank"
+                className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-blue-600 transition-colors"
+              >
+                LinkedIn
+              </a>
+            </div>
           </div>
-        </header>
+        </section>
 
         {/* About Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 pb-2 border-b border-gray-200 dark:border-gray-700">
-            About Me
-          </h2>
-          <p className="mb-6 text-lg">
-            Expert <strong className="text-blue-600 dark:text-blue-400">Node.js and PHP developer</strong> with <strong>7+ years</strong> of experience building scalable web applications.
-          </p>
-          
-          <div className="grid md:grid-cols-2 gap-8">
+        <section className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">About Me</h2>
+            <p className="mb-6 text-base sm:text-lg">
+              Expert <strong className="text-blue-600 dark:text-blue-400">Node.js and PHP developer</strong> with <strong>7+ years</strong> of experience building scalable web applications.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-8">
             <div>
               <h3 className="font-semibold mb-3 text-lg">Technical Skills:</h3>
               <ul className="space-y-2">
@@ -111,22 +124,22 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 mb-16">
-          <h2 className="text-2xl font-bold mb-4">Get In Touch</h2>
+        <section className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4">Get In Touch</h2>
           <div className="space-y-3">
             <p className="flex items-center">
               <span className="mr-2">📧</span>
-              <a href="mailto:sushantsharma739@gmail.com">sushantsharma739@gmail.com</a>
+              <a href="mailto:sushantsharma739@gmail.com" className="text-blue-600 hover:underline">sushantsharma739@gmail.com</a>
             </p>
             <p className="flex items-center">
               <span className="mr-2">📱</span>
-              <a href="tel:+918195927482">+91 8195927482</a>
+              <a href="tel:+918195927482" className="text-blue-600 hover:underline">+91 8195927482</a>
             </p>
           </div>
         </section>
       </main>
 
-      <footer className="text-center py-8 text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700">
+      <footer className="text-center py-6 sm:py-8 text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700">
         <p>© {new Date().getFullYear()} Sushant Kumar. All rights reserved.</p>
       </footer>
     </>
