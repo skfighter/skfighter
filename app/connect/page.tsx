@@ -13,6 +13,9 @@ export default function Connect() {
           </div>
         </div>
 
+
+
+
         <div>
           <h2 className="text-xl font-semibold mb-4">Send a Message</h2>
           <form className="space-y-4">
