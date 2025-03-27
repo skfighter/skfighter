@@ -48,7 +48,7 @@ export default function Home() {
         {/* Header Section */}
         <header className="text-center mb-16">
           <img
-            src="https://avatars.githubusercontent.com/u/29157367?v=7"
+            src="./images/sushant-kumar-profile.jpg"
             alt="Sushant Kumar"
             className="mx-auto rounded-full w-32 h-32 object-cover mb-6 ring-4 ring-blue-500/20"
           />
