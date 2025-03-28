@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         {/* Primary Meta Tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#2980b9" />
+        <meta name="theme-color" content="#1e293b" />
         <meta name="keywords" content="backend developer, Node.js developer, PHP expert, MySQL developer" />
         <meta name="author" content="Sushant Kumar" />
         <meta name="robots" content="index, follow" />
@@ -48,14 +48,14 @@ export default function Home() {
         </script>
       </Head>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+      <main className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16 bg-gray-900 text-gray-200">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl p-8 sm:p-12 shadow-lg">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-30 blur-lg"></div>
+        <section className="relative bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white rounded-xl p-8 sm:p-12 shadow-2xl">
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-900 to-black opacity-50 blur-lg"></div>
           <div className="relative z-10 text-center">
             <div className="relative mx-auto w-24 h-24 sm:w-32 sm:h-32 mb-6">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-lg"></div>
-              <div className="relative w-full h-full ring-4 ring-blue-500/20 rounded-full overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full blur-sm"></div>
+              <div className="relative w-full h-full ring-4 ring-blue-200/20 rounded-full overflow-hidden">
                 <Image
                   src="/images/sushant-kumar-profile.jpg"
                   alt="Sushant Kumar"
@@ -74,14 +74,14 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-4">
               <a 
                 href="/connect" 
-                className="px-4 py-2 bg-white text-blue-600 rounded-full hover:bg-gray-100 transition-colors"
+                className="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
               >
                 Contact Me
               </a>
               <a 
                 href="https://www.linkedin.com/in/sushantkumar-1a4b30b2" 
                 target="_blank"
-                className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-blue-600 transition-colors"
+                className="px-4 py-2 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition-colors"
               >
                 LinkedIn
               </a>
@@ -92,29 +92,29 @@ export default function Home() {
         {/* About Section */}
         <section className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">About Me</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-blue-400">About Me</h2>
             <p className="mb-6 text-base sm:text-lg">
-              Expert <strong className="text-blue-600 dark:text-blue-400">Node.js and PHP developer</strong> with <strong>7+ years</strong> of experience building scalable web applications.
+              Expert <strong className="text-blue-500">Node.js and PHP developer</strong> with <strong>7+ years</strong> of experience building scalable web applications.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-8">
             <div>
-              <h3 className="font-semibold mb-3 text-lg">Technical Skills:</h3>
+              <h3 className="font-semibold mb-3 text-lg text-blue-400">Technical Skills:</h3>
               <ul className="space-y-2">
-                {['Node.js', 'PHP', 'MySQL', 'REST APIs', 'AWS', 'Docker'].map((skill) => (
+                {['NestJS', 'Laravel', 'MySQL', 'PostgreSQL', 'AWS-Serverless', 'Docker','Git'].map((skill) => (
                   <li key={skill} className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                     {skill}
                   </li>
                 ))}
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-3 text-lg">Core Expertise:</h3>
+              <h3 className="font-semibold mb-3 text-lg text-purple-400">Core Expertise:</h3>
               <ul className="space-y-2">
-                {['Backend Architecture', 'Performance Optimization', 'Database Design', 'Team Leadership'].map((item) => (
+                {['Backend Architecture', 'Performance Optimization', 'Database Design', 'Data integration and security', 'Team Leadership'].map((item) => (
                   <li key={item} className="flex items-center">
-                    <span className="w-2 h-2 bg-purple-600 rounded-full mr-2"></span>
+                    <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
                     {item}
                   </li>
                 ))}
@@ -124,22 +124,22 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg">
-          <h2 className="text-xl sm:text-2xl font-bold mb-4">Get In Touch</h2>
+        <section className="bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4 text-blue-400">Get In Touch</h2>
           <div className="space-y-3">
             <p className="flex items-center">
               <span className="mr-2">📧</span>
-              <a href="mailto:sushantsharma739@gmail.com" className="text-blue-600 hover:underline">sushantsharma739@gmail.com</a>
+              <a href="mailto:sushantsharma739@gmail.com" className="text-blue-500 hover:underline">sushantsharma739@gmail.com</a>
             </p>
             <p className="flex items-center">
               <span className="mr-2">📱</span>
-              <a href="tel:+918195927482" className="text-blue-600 hover:underline">+91 8195927482</a>
+              <a href="tel:+918195927482" className="text-blue-500 hover:underline">+91 8195927482</a>
             </p>
           </div>
         </section>
       </main>
 
-      <footer className="text-center py-6 sm:py-8 text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700">
+      <footer className="text-center py-6 sm:py-8 text-gray-500 border-t border-gray-700">
         <p>© {new Date().getFullYear()} Sushant Kumar. All rights reserved.</p>
       </footer>
     </>
