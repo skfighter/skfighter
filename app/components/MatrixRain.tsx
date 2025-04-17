@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 const MatrixRain = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number>(0);
   const frameCount = useRef(0);
 
   useEffect(() => {
