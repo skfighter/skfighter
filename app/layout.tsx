@@ -87,6 +87,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Initialize dataLayer before GTM */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+            `,
+          }}
+        />
+      </head>
       <body className="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
         {/* Google Tag Manager (noscript) */}
         <noscript>
