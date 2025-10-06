@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -676,8 +677,8 @@ export default function Home() {
 
           {/* Call to Action */}
           <div className="text-center pt-6 border-t border-gray-700">
-            <p className="text-gray-300 mb-4">Ready to start your project? Let's discuss your requirements!</p>
-            <a 
+            <p className="text-gray-300 mb-4">Ready to start your project? Let&apos;s discuss your requirements!</p>
+            <Link 
               href="/connect" 
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium shadow-lg"
               title="Contact Sushant Kumar for Backend Development Projects"
@@ -687,7 +688,7 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
               </svg>
               Contact Me Now
-            </a>
+            </Link>
           </div>
         </section>
       </main>
@@ -699,10 +700,10 @@ export default function Home() {
             <div>
               <h3 className="font-semibold text-white mb-3">Quick Links</h3>
               <nav className="space-y-2">
-                <a href="/" className="block text-gray-400 hover:text-blue-400 transition-colors" title="Home - Sushant Kumar Backend Developer">Home</a>
-                <a href="/blog" className="block text-gray-400 hover:text-blue-400 transition-colors" title="Tech Blog - Backend Development Articles">Blog</a>
-                <a href="/connect" className="block text-gray-400 hover:text-blue-400 transition-colors" title="Contact Sushant Kumar">Contact</a>
-                <a href="/chat" className="block text-gray-400 hover:text-blue-400 transition-colors" title="Chat with Sushant">Chat</a>
+                <Link href="/" className="block text-gray-400 hover:text-blue-400 transition-colors" title="Home - Sushant Kumar Backend Developer">Home</Link>
+                <Link href="/blog" className="block text-gray-400 hover:text-blue-400 transition-colors" title="Tech Blog - Backend Development Articles">Blog</Link>
+                <Link href="/connect" className="block text-gray-400 hover:text-blue-400 transition-colors" title="Contact Sushant Kumar">Contact</Link>
+                <Link href="/chat" className="block text-gray-400 hover:text-blue-400 transition-colors" title="Chat with Sushant">Chat</Link>
               </nav>
             </div>
             <div>

@@ -1,10 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import type { Metadata } from "next";
-
-// Since this is a client component, we'll handle metadata differently
-// We'll add the metadata in layout or use next/head
+import Link from 'next/link';
 
 export default function Connect() {
   const [formData, setFormData] = useState({
@@ -32,7 +29,7 @@ export default function Connect() {
     }
 
     // Format the email content professionally
-    const emailSubject = formData.subject || 'Project Inquiry - Let\'s Work Together';
+    const emailSubject = formData.subject || 'Project Inquiry - Let&apos;s Work Together';
     
     const emailBody = `Dear Sushant,
 
@@ -71,10 +68,10 @@ This message was sent through your professional website contact form at skfighte
         <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-900 to-black opacity-60 blur-lg"></div>
         <div className="relative z-10 text-center">
           <h1 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            Let's Work Together
+            Let&apos;s Work Together
           </h1>
           <p className="text-lg sm:text-xl text-gray-200">
-            Ready to bring your ideas to life? Let's connect and discuss your project.
+            Ready to bring your ideas to life? Let&apos;s connect and discuss your project.
           </p>
         </div>
       </section>
@@ -152,14 +149,13 @@ This message was sent through your professional website contact form at skfighte
             </div>
           </div>
           
-          {/* Back to Home Button */}
           <div className="mt-8">
-            <a 
+            <Link 
               href="/" 
               className="inline-flex items-center px-4 py-2 border border-blue-700 text-blue-400 rounded-full hover:bg-blue-700 hover:text-white transition-colors"
             >
               ← Back to Home
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -216,7 +212,7 @@ This message was sent through your professional website contact form at skfighte
             </div>
             <div className="text-sm text-gray-400">
               <p>* Required fields</p>
-              <p className="mt-1">Clicking "Send Message" will open your default email client with a professionally formatted message.</p>
+              <p className="mt-1">Clicking &quot;Send Message&quot; will open your default email client with a professionally formatted message.</p>
             </div>
             <button 
               type="submit" 

@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // Performance optimizations
   experimental: {
-    optimizeCss: true,
+    // Removed optimizeCss as it's causing build issues
     optimizeServerReact: true,
   },
   
@@ -67,11 +67,11 @@ const nextConfig: NextConfig = {
     ];
   },
   
-  // Output optimization
-  output: 'standalone',
+  // Remove problematic output config for Vercel
+  // output: 'standalone',
   
-  // Asset optimization
-  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://skfighter.com' : '',
+  // Asset optimization - conditional for production
+  // assetPrefix: process.env.NODE_ENV === 'production' ? 'https://skfighter.com' : '',
   
   // Bundle analysis
   webpack: (config, { isServer }) => {

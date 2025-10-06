@@ -91,6 +91,8 @@ export default function RootLayout({
         <MatrixRain />
         {children}
         <GoogleAnalytics />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

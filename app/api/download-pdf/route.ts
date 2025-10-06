@@ -1,37 +1,35 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-import { stat } from 'fs/promises';
+import { readFile, stat } from 'fs/promises';
+import { join } from 'path';
 
 export async function GET() {
   try {
-    // Path to your ZIP file
-    const filePath = path.resolve('./public/files', 'chrome-extension.zip');
+    const filePath = join(process.cwd(), 'public', 'files', 'chrome-extension.zip');
     
     // Check if file exists
     try {
       await stat(filePath);
-    } catch (e) {
+    } catch {
       return NextResponse.json(
         { error: 'ZIP file not found' },
         { status: 404 }
       );
     }
     
-    // Read file as buffer
-    const fileBuffer = fs.readFileSync(filePath);
+    // Read and return file
+    const fileBuffer = await readFile(filePath);
     
-    // Return file with appropriate headers for ZIP
-    return new NextResponse(fileBuffer, {
+    return new Response(new Uint8Array(fileBuffer), {
       headers: {
-        'Content-Disposition': 'attachment; filename=skGoogle.zip',
+        'Content-Disposition': 'attachment; filename="chrome-extension.zip"',
         'Content-Type': 'application/zip',
+        'Content-Length': fileBuffer.length.toString(),
       },
     });
   } catch (error) {
     console.error('Download error:', error);
     return NextResponse.json(
-      { error: 'Failed to download ZIP' },
+      { error: 'Failed to download file' },
       { status: 500 }
     );
   }

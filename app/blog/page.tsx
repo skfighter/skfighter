@@ -95,7 +95,7 @@ export default function BlogPage() {
       <section className="bg-gray-800 rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-white mb-4">More Articles Coming Soon</h2>
         <p className="text-gray-300 mb-6">
-          I'm actively working on more in-depth articles about backend development, 
+          I&apos;m actively working on more in-depth articles about backend development, 
           performance optimization, and modern web technologies.
         </p>
         <a 
