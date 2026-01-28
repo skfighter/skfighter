@@ -17,7 +17,7 @@ const MatrixRain = () => {
     canvas.height = window.innerHeight;
 
     const chars =
-      "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789";
+      "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहਅਆਇਈਉਊਏਐਓਔਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵਸਹ0123456789";
     const fontSize = 12;
     const columns = Math.floor(canvas.width / fontSize);
     const drops: number[] = new Array(columns).fill(1);
