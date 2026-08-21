@@ -5,11 +5,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home | Expert Backend Developer specializing in Node.js & PHP",
-  description: "Sushant Kumar - Senior Backend Developer with 7+ years experience in Node.js, PHP, Laravel, NestJS, MySQL & AWS. Building scalable web applications in Chandigarh, India.",
+  description: "Sushant Kumar - Senior Backend Developer with 10+ years experience in Node.js, PHP, Laravel, NestJS, MySQL & AWS. Building scalable web applications in Chandigarh, India.",
   keywords: "backend developer chandigarh, node.js expert, php developer, laravel specialist, mysql database expert, api development, web application development",
   openGraph: {
     title: "Sushant Kumar | Expert Backend Developer (Node.js/PHP)",
-    description: "Senior Backend Developer with 7+ years experience. Specializing in Node.js, PHP, Laravel, MySQL & AWS. Available for projects.",
+    description: "Senior Backend Developer with 10+ years experience. Specializing in Node.js, PHP, Laravel, MySQL & AWS. Available for projects.",
     url: "https://skfighter.com",
     images: [
       {
@@ -210,15 +210,34 @@ export default function Home() {
             <h1 className="text-3xl sm:text-4xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Sushant Kumar
             </h1>
-            <p className="text-lg sm:text-xl mb-4 text-gray-200">
-              Backend Developer (Node.js/PHP) | Chandigarh, India
+            <p className="text-lg sm:text-xl mb-2 text-gray-200">
+              Innovative Backend Developer | Transforming Code into Seamless User Experiences
+            </p>
+            <p className="text-sm sm:text-base mb-6 text-gray-400">
+              PHP · Node.js · MySQL · APIs · Cloud | Chandigarh, India
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a 
-                href="/connect" 
+              <a
+                href="/connect"
                 className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium shadow-lg"
               >
                 Get In Touch
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sushant-kumar-1a4b30b2/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-blue-700/30 border border-blue-500/50 text-blue-400 rounded-full hover:bg-blue-700/50 transition-all duration-200 font-medium"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/skfighter"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-gray-700/30 border border-gray-500/50 text-gray-300 rounded-full hover:bg-gray-700/50 transition-all duration-200 font-medium"
+              >
+                GitHub
               </a>
             </div>
           </div>
@@ -229,10 +248,10 @@ export default function Home() {
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-blue-500">About Me</h2>
             <p className="mb-6 text-base sm:text-lg text-gray-200">
-              Passionate <strong className="text-blue-500">Backend Developer</strong> with <strong>7+ years</strong> of experience in building robust, scalable web applications. I specialize in creating efficient server-side solutions that power modern web and mobile applications.
+              Expert in <strong className="text-blue-500">NodeJS, PHP, and MySQL</strong> with <strong>10+ years</strong> of proven experience building scalable and efficient web applications. Passionate about optimizing performance and delivering exceptional user experiences.
             </p>
             <p className="mb-6 text-base text-gray-300">
-              My expertise spans across multiple technologies and frameworks, with a strong focus on performance optimization, security, and maintainable code architecture. I enjoy solving complex technical challenges and collaborating with cross-functional teams to deliver exceptional digital experiences.
+              Problem-solver with strong analytical skills. Proficient in client solutions, team building, codebase management, RESTful APIs, and Cloud technologies. Committed to driving seamless integration and enhancing system functionality.
             </p>
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Problem Solver</span>
@@ -272,44 +291,57 @@ export default function Home() {
           <div className="space-y-8">
             <div className="border-l-4 border-blue-500 pl-6">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                <h3 className="text-xl font-semibold text-white">Senior Backend Developer</h3>
-                <span className="text-sm text-gray-400">2020 - Present</span>
+                <h3 className="text-xl font-semibold text-white">Senior Software Developer</h3>
+                <span className="text-sm text-gray-400">Jul 2020 - Present</span>
               </div>
-              <p className="text-blue-400 mb-2">Various Organizations | Chandigarh, India</p>
+              <p className="text-blue-400 mb-2">OffsureIT Solutions · Full-time | Chandigarh, India</p>
               <ul className="space-y-1 text-gray-200">
-                <li>• Led development of scalable backend systems serving 100K+ users</li>
-                <li>• Architected microservices infrastructure reducing response time by 40%</li>
-                <li>• Implemented robust security measures and data protection protocols</li>
+                <li>• Worked to solve complex problems using the latest in Cloud, Mobile, and Web Technologies</li>
+                <li>• Helped to provide industry-leading solutions</li>
+                <li>• Effectively coded software changes and alterations based on specific design specifications</li>
                 <li>• Mentored junior developers and established coding best practices</li>
               </ul>
             </div>
-            
+
             <div className="border-l-4 border-purple-500 pl-6">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                <h3 className="text-xl font-semibold text-white">Full Stack Developer</h3>
-                <span className="text-sm text-gray-400">2018 - 2020</span>
+                <h3 className="text-xl font-semibold text-white">Software Developer</h3>
+                <span className="text-sm text-gray-400">Feb 2017 - Jul 2020</span>
               </div>
-              <p className="text-purple-400 mb-2">Technology Companies | India</p>
+              <p className="text-purple-400 mb-2">OffsureIT Solutions · Full-time | Chandigarh, India</p>
               <ul className="space-y-1 text-gray-200">
+                <li>• Brought forth a passion and dedication to software development</li>
+                <li>• Worked on internal and external projects with great care</li>
                 <li>• Developed and maintained web applications using PHP, Laravel, and MySQL</li>
                 <li>• Integrated third-party APIs and payment gateways</li>
-                <li>• Optimized database queries improving application performance by 60%</li>
-                <li>• Collaborated with frontend teams to deliver seamless user experiences</li>
               </ul>
             </div>
 
             <div className="border-l-4 border-green-500 pl-6">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                <h3 className="text-xl font-semibold text-white">Junior Developer</h3>
-                <span className="text-sm text-gray-400">2017 - 2018</span>
+                <h3 className="text-xl font-semibold text-white">Web Developer</h3>
+                <span className="text-sm text-gray-400">Jun 2016 - Feb 2017</span>
               </div>
-              <p className="text-green-400 mb-2">Software Development | India</p>
+              <p className="text-green-400 mb-2">Dcube Tech Ventures Pvt. Ltd. | Mohali, Punjab, India</p>
               <ul className="space-y-1 text-gray-200">
-                <li>• Built responsive web applications using modern frameworks</li>
-                <li>• Participated in agile development processes and code reviews</li>
-                <li>• Learned industry best practices for software development lifecycle</li>
+                <li>• Successfully identified, diagnosed, and fixed website problems including broken links and formatting issues</li>
+                <li>• Worked with a proficient understanding of code conversion tools</li>
+                <li>• Managed front-end and back-end development in Portfolio Analyst, Employee Track, and Account Management systems</li>
               </ul>
             </div>
+          </div>
+        </section>
+
+        {/* Education Section */}
+        <section className="bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-yellow-500">Education</h2>
+          <div className="border-l-4 border-yellow-500 pl-6">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+              <h3 className="text-xl font-semibold text-white">Bachelor of Computer Applications (BCA)</h3>
+              <span className="text-sm text-gray-400">2013 – 2015</span>
+            </div>
+            <p className="text-yellow-400 mb-2">D.A.V. College, Abohar · Computer Programming & Specific Applications</p>
+            <p className="text-gray-300">🏆 Student of the Year</p>
           </div>
         </section>
 
@@ -519,7 +551,7 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-yellow-500">Professional Achievements</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl p-6 text-center shadow-lg">
-              <div className="text-3xl font-bold text-white mb-2">7+</div>
+              <div className="text-3xl font-bold text-white mb-2">10+</div>
               <div className="text-blue-200">Years Experience</div>
             </div>
             <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl p-6 text-center shadow-lg">
