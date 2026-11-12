@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { posts } from "./posts";
 
 export const metadata: Metadata = {
   title: "Tech Blog: Backend Development Insights",
@@ -15,35 +17,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Building Scalable APIs with Node.js and NestJS",
-      excerpt: "Learn how to create robust, scalable APIs using Node.js and the NestJS framework with best practices and real-world examples.",
-      date: "2025-10-01",
-      readTime: "8 min read",
-      tags: ["Node.js", "NestJS", "API Development"],
-      slug: "scalable-apis-nodejs-nestjs"
-    },
-    {
-      id: 2,
-      title: "Laravel Performance Optimization: Database Queries",
-      excerpt: "Discover advanced techniques to optimize Laravel application performance through efficient database query optimization.",
-      date: "2025-09-28",
-      readTime: "6 min read",
-      tags: ["Laravel", "PHP", "Database", "Performance"],
-      slug: "laravel-performance-optimization"
-    },
-    {
-      id: 3,
-      title: "MySQL Indexing Strategies for Better Performance",
-      excerpt: "Master MySQL indexing strategies to dramatically improve your database performance and query execution time.",
-      date: "2025-09-25",
-      readTime: "10 min read",
-      tags: ["MySQL", "Database", "Performance", "Indexing"],
-      slug: "mysql-indexing-strategies"
-    }
-  ];
+  const blogPosts = posts;
 
   return (
     <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gray-900 text-gray-100 min-h-screen">
@@ -61,7 +35,7 @@ export default function BlogPage() {
       {/* Blog Posts Grid */}
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
         {blogPosts.map((post) => (
-          <article key={post.id} className="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <article key={post.slug} className="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
             <div className="flex flex-wrap gap-2 mb-4">
               {post.tags.map((tag) => (
                 <span key={tag} className="px-3 py-1 bg-blue-600/20 text-blue-400 text-sm rounded-full">
@@ -70,9 +44,9 @@ export default function BlogPage() {
               ))}
             </div>
             <h2 className="text-xl font-semibold text-white mb-3 hover:text-blue-400 transition-colors">
-              <a href={`/blog/${post.slug}`} title={post.title}>
+              <Link href={`/blog/${post.slug}`}>
                 {post.title}
-              </a>
+              </Link>
             </h2>
             <p className="text-gray-300 mb-4 line-clamp-3">
               {post.excerpt}
