@@ -1,16 +1,26 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home | Expert Backend Developer specializing in Node.js & PHP",
+  title: {
+    absolute: "Sushant Kumar | Senior Backend Developer (Node.js, PHP) | Chandigarh",
+  },
   description: "Sushant Kumar - Senior Backend Developer with 10+ years experience in Node.js, PHP, Laravel, NestJS, MySQL & AWS. Building scalable web applications in Chandigarh, India.",
   keywords: "backend developer chandigarh, node.js expert, php developer, laravel specialist, mysql database expert, api development, web application development",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
+    type: "profile",
+    firstName: "Sushant",
+    lastName: "Kumar",
+    username: "skfighter",
     title: "Sushant Kumar | Expert Backend Developer (Node.js/PHP)",
     description: "Senior Backend Developer with 10+ years experience. Specializing in Node.js, PHP, Laravel, MySQL & AWS. Available for projects.",
-    url: "https://skfighter.com",
+    url: "/",
+    siteName: "Sushant Kumar - Backend Developer",
+    locale: "en_IN",
     images: [
       {
         url: "/images/sushant-kumar-profile.jpg",
@@ -19,7 +29,7 @@ export const metadata: Metadata = {
         alt: "Sushant Kumar - Backend Developer Profile"
       }
     ]
-  }
+  },
 };
 
 export default function Home() {
@@ -29,13 +39,13 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://skfighter.com/#person",
+        "@id": "https://www.skfighter.com/#person",
         "name": "Sushant Kumar",
         "alternateName": "SKFighter",
-        "url": "https://skfighter.com",
+        "url": "https://www.skfighter.com",
         "image": {
           "@type": "ImageObject",
-          "url": "https://skfighter.com/images/sushant-kumar-profile.jpg",
+          "url": "https://www.skfighter.com/images/sushant-kumar-profile.jpg",
           "width": 400,
           "height": 400
         },
@@ -81,25 +91,20 @@ export default function Home() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://skfighter.com/#website",
-        "url": "https://skfighter.com",
+        "@id": "https://www.skfighter.com/#website",
+        "url": "https://www.skfighter.com",
         "name": "Sushant Kumar - Backend Developer",
         "description": "Professional portfolio of Sushant Kumar, a senior backend developer specializing in Node.js, PHP, and scalable web applications.",
         "publisher": {
-          "@id": "https://skfighter.com/#person"
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://skfighter.com/search?q={search_term_string}",
-          "query-input": "required name=search_term_string"
+          "@id": "https://www.skfighter.com/#person"
         }
       },
       {
         "@type": "ProfessionalService",
-        "@id": "https://skfighter.com/#service",
+        "@id": "https://www.skfighter.com/#service",
         "name": "Backend Development Services",
         "provider": {
-          "@id": "https://skfighter.com/#person"
+          "@id": "https://www.skfighter.com/#person"
         },
         "serviceType": "Web Development",
         "areaServed": "India",
@@ -139,51 +144,11 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        {/* Enhanced SEO Meta Tags */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#1e293b" />
-        <meta name="author" content="Sushant Kumar" />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="bingbot" content="index, follow" />
-        
-        {/* Language and Location */}
-        <meta name="language" content="English" />
-        <meta name="geo.region" content="IN-CH" />
-        <meta name="geo.placename" content="Chandigarh" />
-        <meta name="geo.position" content="30.7333;76.7794" />
-        <meta name="ICBM" content="30.7333, 76.7794" />
-        
-        {/* Enhanced Open Graph */}
-        <meta property="og:type" content="profile" />
-        <meta property="og:url" content="https://skfighter.com/" />
-        <meta property="og:site_name" content="Sushant Kumar - Backend Developer" />
-        <meta property="og:locale" content="en_IN" />
-        <meta property="profile:first_name" content="Sushant" />
-        <meta property="profile:last_name" content="Kumar" />
-        <meta property="profile:username" content="skfighter" />
-        
-        {/* Enhanced Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@skfighter007" />
-        <meta name="twitter:creator" content="@skfighter007" />
-        
-        {/* Professional Schema */}
-        <script 
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        
-        {/* Additional Technical SEO */}
-        <link rel="canonical" href="https://skfighter.com/" />
-        <link rel="alternate" hrefLang="en-in" href="https://skfighter.com/" />
-        <link rel="alternate" hrefLang="en" href="https://skfighter.com/" />
-        
-        {/* Preconnect for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      </Head>
+      {/* Structured data (JSON-LD) - rendered in the page body, which Google reads fine */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
 
       <main className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16 bg-gray-900 text-gray-100">
         {/* Hero Section */}

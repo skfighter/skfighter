@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tech Blog | Insights from a Senior Backend Developer",
+  title: "Tech Blog: Backend Development Insights",
   description: "Read technical articles, tutorials, and insights about Node.js, PHP, Laravel, MySQL, and backend development by Sushant Kumar.",
   keywords: "backend development blog, node.js tutorials, php articles, laravel tips, mysql optimization, web development insights",
   openGraph: {
     title: "Tech Blog | Backend Development Insights by Sushant Kumar",
     description: "Technical articles and tutorials about backend development, Node.js, PHP, Laravel, and more.",
-    url: "https://skfighter.com/blog",
+    url: "/blog",
   },
   alternates: {
-    canonical: "https://skfighter.com/blog",
+    canonical: "/blog",
   },
 };
 

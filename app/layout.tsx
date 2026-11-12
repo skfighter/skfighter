@@ -1,17 +1,17 @@
 import MatrixRain from "./components/MatrixRain";
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "./components/GoogleAnalytics";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://skfighter.com'),
+  metadataBase: new URL('https://www.skfighter.com'),
   title: {
     default: "Sushant Kumar | Senior Backend Developer (Node.js/PHP) | Chandigarh",
-    template: "%s | Sushant Kumar - Backend Developer"
+    template: "%s | Sushant Kumar"
   },
-  description: "Expert Backend Developer with 7+ years experience in Node.js, PHP, Laravel, NestJS & MySQL. Building scalable web applications and APIs. Available for hire in Chandigarh, India.",
+  description: "Expert Backend Developer with 10+ years experience in Node.js, PHP, Laravel, NestJS & MySQL. Building scalable web applications and APIs. Available for hire in Chandigarh, India.",
   keywords: [
     "backend developer",
     "node.js developer", 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "aws developer",
     "docker expert"
   ],
-  authors: [{ name: "Sushant Kumar", url: "https://skfighter.com" }],
+  authors: [{ name: "Sushant Kumar", url: "https://www.skfighter.com" }],
   creator: "Sushant Kumar",
   publisher: "Sushant Kumar",
   formatDetection: {
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://skfighter.com',
+    url: '/',
     title: 'Sushant Kumar | Senior Backend Developer (Node.js/PHP)',
-    description: 'Expert Backend Developer with 7+ years experience in Node.js, PHP, Laravel, NestJS & MySQL. Building scalable web applications and APIs.',
+    description: 'Expert Backend Developer with 10+ years experience in Node.js, PHP, Laravel, NestJS & MySQL. Building scalable web applications and APIs.',
     siteName: 'Sushant Kumar - Backend Developer',
     images: [
       {
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Sushant Kumar | Senior Backend Developer',
-    description: 'Expert Backend Developer specializing in Node.js, PHP, Laravel & MySQL. 7+ years experience building scalable applications.',
+    description: 'Expert Backend Developer specializing in Node.js, PHP, Laravel & MySQL. 10+ years experience building scalable applications.',
     creator: '@skfighter007',
     images: ['/images/sushant-kumar-profile.jpg'],
   },
@@ -76,8 +76,12 @@ export const metadata: Metadata = {
     google: 'google128df01bc60f775b',
   },
   alternates: {
-    canonical: 'https://skfighter.com',
+    canonical: '/',
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#1e293b',
 };
 
 export default function RootLayout({
