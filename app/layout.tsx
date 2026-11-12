@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: "Sushant Kumar | Senior Backend Developer (Node.js/PHP) | Chandigarh",
     template: "%s | Sushant Kumar"
   },
-  description: "Expert Backend Developer with 10+ years experience in Node.js, PHP, Laravel, NestJS & MySQL. Building scalable web applications and APIs. Available for hire in Chandigarh, India.",
+  description: "Senior Backend Developer with 10+ years in Node.js, PHP, Laravel, NestJS & MySQL. I build scalable web apps and APIs. Based in Chandigarh, India.",
   keywords: [
     "backend developer",
     "node.js developer", 
@@ -54,23 +54,14 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: '/',
     title: 'Sushant Kumar | Senior Backend Developer (Node.js/PHP)',
-    description: 'Expert Backend Developer with 10+ years experience in Node.js, PHP, Laravel, NestJS & MySQL. Building scalable web applications and APIs.',
+    description: 'Senior Backend Developer with 10+ years in Node.js, PHP, Laravel, NestJS & MySQL. Building scalable web applications and APIs.',
     siteName: 'Sushant Kumar - Backend Developer',
-    images: [
-      {
-        url: '/images/sushant-kumar-profile.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Sushant Kumar - Backend Developer Profile',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Sushant Kumar | Senior Backend Developer',
     description: 'Expert Backend Developer specializing in Node.js, PHP, Laravel & MySQL. 10+ years experience building scalable applications.',
     creator: '@skfighter007',
-    images: ['/images/sushant-kumar-profile.jpg'],
   },
   verification: {
     google: 'google128df01bc60f775b',

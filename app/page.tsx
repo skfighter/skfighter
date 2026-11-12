@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Sushant Kumar | Senior Backend Developer (Node.js, PHP) | Chandigarh",
+    absolute: "Sushant Kumar | Senior Backend Developer, Chandigarh",
   },
-  description: "Sushant Kumar - Senior Backend Developer with 10+ years experience in Node.js, PHP, Laravel, NestJS, MySQL & AWS. Building scalable web applications in Chandigarh, India.",
+  description: "Sushant Kumar, Senior Backend Developer with 10+ years in Node.js, PHP, Laravel, NestJS, MySQL & AWS. Building scalable web apps from Chandigarh, India.",
   keywords: "backend developer chandigarh, node.js expert, php developer, laravel specialist, mysql database expert, api development, web application development",
   alternates: {
     canonical: "/",
@@ -20,15 +20,7 @@ export const metadata: Metadata = {
     description: "Senior Backend Developer with 10+ years experience. Specializing in Node.js, PHP, Laravel, MySQL & AWS. Available for projects.",
     url: "/",
     siteName: "Sushant Kumar - Backend Developer",
-    locale: "en_IN",
-    images: [
-      {
-        url: "/images/sushant-kumar-profile.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Sushant Kumar - Backend Developer Profile"
-      }
-    ]
+    locale: "en_IN"
   },
 };
 
@@ -46,8 +38,8 @@ export default function Home() {
         "image": {
           "@type": "ImageObject",
           "url": "https://www.skfighter.com/images/sushant-kumar-profile.jpg",
-          "width": 400,
-          "height": 400
+          "width": 1080,
+          "height": 1350
         },
         "sameAs": [
           "https://www.linkedin.com/in/sushant-kumar-1a4b30b2/",

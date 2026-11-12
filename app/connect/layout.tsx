@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact - Hire a Backend Developer",
-  description: "Contact Sushant Kumar for your backend development needs. Expert in Node.js, PHP, Laravel, MySQL. Available for freelance projects and consultations in Chandigarh, India.",
+  description: "Hire Sushant Kumar for backend development in Node.js, PHP, Laravel and MySQL. Available for freelance projects and consultations. Based in Chandigarh.",
   keywords: "contact backend developer, hire node.js developer, php developer for hire, freelance developer chandigarh, backend development services",
   openGraph: {
     title: "Contact Sushant Kumar | Backend Developer Services",

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Tech Blog | Backend Development Insights by Sushant Kumar",
     description: "Technical articles and tutorials about backend development, Node.js, PHP, Laravel, and more.",
     url: "/blog",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Sushant Kumar - Senior Backend Developer" }],
   },
   alternates: {
     canonical: "/blog",

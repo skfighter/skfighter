@@ -55,6 +55,13 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        // Send the default Vercel domain to the real site so only one version gets indexed
+        source: '/:path*',
+        has: [{ type: 'host', value: 'skfighter.vercel.app' }],
+        destination: 'https://www.skfighter.com/:path*',
+        permanent: true,
+      },
+      {
         source: '/home',
         destination: '/',
         permanent: true,

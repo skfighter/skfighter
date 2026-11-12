@@ -35,7 +35,7 @@ export async function generateMetadata({
       publishedTime: post.date,
       authors: ["Sushant Kumar"],
       tags: post.tags,
-      images: [{ url: "/images/sushant-kumar-profile.jpg", alt: "Sushant Kumar" }],
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Sushant Kumar - Senior Backend Developer" }],
     },
   };
 }
@@ -94,7 +94,7 @@ export default async function BlogPostPage({
     url,
     mainEntityOfPage: url,
     keywords: post.tags.join(", "),
-    image: `${SITE_URL}/images/sushant-kumar-profile.jpg`,
+    image: `${SITE_URL}/opengraph-image`,
     author: { "@id": `${SITE_URL}/#person`, "@type": "Person", name: "Sushant Kumar", url: SITE_URL },
     publisher: { "@id": `${SITE_URL}/#person` },
   };

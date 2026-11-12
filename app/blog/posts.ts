@@ -23,7 +23,7 @@ export const posts: BlogPost[] = [
     slug: "scalable-apis-nodejs-nestjs",
     title: "Building Scalable APIs with Node.js and NestJS",
     description:
-      "A practical guide to building scalable REST APIs with Node.js and NestJS: modular structure, DTO validation, stateless design, caching, pagination, rate limiting and health checks.",
+      "Build scalable REST APIs with Node.js and NestJS: feature modules, DTO validation, stateless design, caching, pagination, rate limiting and health checks.",
     excerpt:
       "Learn how to create robust, scalable APIs using Node.js and the NestJS framework with best practices and real-world examples.",
     date: "2025-10-01",
@@ -174,7 +174,7 @@ export class AppModule {}`,
     slug: "laravel-performance-optimization",
     title: "Laravel Performance Optimization: Database Queries",
     description:
-      "Speed up Laravel apps by fixing the database layer: N+1 queries, eager loading, selecting only needed columns, chunking, withCount, indexes and query caching.",
+      "Speed up Laravel by fixing the database layer: N+1 queries, eager loading, selecting fewer columns, chunking, withCount, indexes and caching.",
     excerpt:
       "Discover advanced techniques to optimize Laravel application performance through efficient database query optimization.",
     date: "2025-09-28",
@@ -319,7 +319,7 @@ User::where('last_login_at', '<', now()->subYear())->update(['active' => false])
     slug: "mysql-indexing-strategies",
     title: "MySQL Indexing Strategies for Better Performance",
     description:
-      "How MySQL indexes really work and how to design them: B-tree basics, composite index column order, covering indexes, EXPLAIN, common mistakes and removing unused indexes.",
+      "How MySQL indexes work and how to design them: B-trees, composite column order, covering indexes, EXPLAIN, common mistakes and unused indexes.",
     excerpt:
       "Master MySQL indexing strategies to dramatically improve your database performance and query execution time.",
     date: "2025-09-25",
